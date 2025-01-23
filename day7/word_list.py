@@ -1,0 +1,1 @@
+word_list = ["apple", "beach", "dream", "earth", "flame", "grape", "happy", "index", "jolly", "kites", "lemon", "mango", "notes", "ocean", "pearl", "quest", "roses", "stars", "tiger", "unity"]
