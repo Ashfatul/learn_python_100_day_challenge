@@ -22,3 +22,7 @@ I'm learning Python and keeping my progress here.
 > a hangman game with function loop and other
 
 ## Day 8
+> Caeser Cipher --- encrypt decrypt text
+
+## Day 9
+> Dictionaries, Nesting -- Secret Bidding App
