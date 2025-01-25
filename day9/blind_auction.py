@@ -1,4 +1,5 @@
 import random
+import time
 items = ["Chair", "Table", "Car", "Bike", "Bed", "Furniture", "Gold", "Silver"]
 auction_item = random.choice(items)
 number_of_bidder = 0
@@ -33,5 +34,6 @@ for key in bids:
         winner = bids[key]["name"]
         max_bid = bids[key]["bid_amount"]
 
-
-print(f"\n\nThe winner of the auction for: {auction_item}\nBidder Name: {winner}\nBidding Price: {max_bid}\n Congratulations! {winner}")
+print("And the winnder is: \n==================================")
+time.sleep(2)
+print(f"\nAuction Item: {auction_item}\nBidder Name: {winner}\nBidding Price: ${max_bid}\nCongratulations! {winner}\n\n")
