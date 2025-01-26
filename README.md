@@ -26,3 +26,6 @@ I'm learning Python and keeping my progress here.
 
 ## Day 9
 > Dictionaries, Nesting -- Secret Bidding App
+
+## Day 10
+> Function with output -- Calculator Project
