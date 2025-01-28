@@ -32,3 +32,6 @@ I'm learning Python and keeping my progress here.
 
 ## Day 11
 > Game -- Blackjack
+
+## Day 12
+> Scope, global variable & Function --- guess number game
