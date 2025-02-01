@@ -35,3 +35,9 @@ I'm learning Python and keeping my progress here.
 
 ## Day 12
 > Scope, global variable & Function --- guess number game
+
+## Day 13
+> Debugging tips
+
+## Day 14
+> Higher or Lower Game
