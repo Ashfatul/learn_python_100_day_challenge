@@ -41,3 +41,21 @@ I'm learning Python and keeping my progress here.
 
 ## Day 14
 > Higher or Lower Game
+
+## Day 15
+> Coffee Machine
+
+## Day 16
+> How to use python package PPM
+
+## Day 17
+> Module and OOP
+
+## Day 18
+> Experiment with turtle module
+
+## Day 19
+> Racing with turtles
+
+## Day 20 & 21
+> Build a snake game, concept of class inheritance, slicing in python, OOP
