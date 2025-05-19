@@ -59,3 +59,8 @@ I'm learning Python and keeping my progress here.
 
 ## Day 20 & 21
 > Build a snake game, concept of class inheritance, slicing in python, OOP
+## Day 22
+> Arcade game
+
+## Day 23
+> Arcade Game
