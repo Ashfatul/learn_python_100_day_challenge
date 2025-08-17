@@ -1,7 +1,8 @@
 import tkinter as tk
-from tkinter import messagebox
+from tkinter import Button, messagebox
 import pyperclip
 from passwordGen import *
+import json
 
 spacer = "    ||    "
 
@@ -18,9 +19,12 @@ canvas.grid(column=1, row=0)
 webLabel = tk.Label(text="Website:")
 webLabel.grid(column=0, row=1)
 
-webUrl = tk.Entry(width=40)
-webUrl.grid(column=1, row=1, columnspan=2)
+webUrl = tk.Entry(width=20)
+webUrl.grid(column=1, row=1)
 webUrl.focus()
+
+searchWeb = Button(text="Search", width=6)
+searchWeb.grid(column=2, row=1)
 
 
 emailLabel = tk.Label(text="Email/Username:")
@@ -38,16 +42,23 @@ passInput.grid(column=1, row=3)
 
 def generateNewPass():
     passInput.delete(0, tk.END)
-    passInput.insert(0, genPass)
+    passInput.insert(0, genPass())
 
 passGen = tk.Button(text="Gen Password", width=10, command=generateNewPass)
 passGen.grid(column=2, row=3)
 
 def storeData():
     if (len(webUrl.get()) > 0 and len(emailAddr.get()) > 0 and len(passInput.get()) > 0):
+        create_data = {
+            webUrl.get(): {
+                "email": emailAddr.get(),
+                "password": passInput.get()
+            }
+        }
         if messagebox.askyesno(title="Sure to save?", message=f"You are about to save\nWebsite: {webUrl.get()}\nEmail: {emailAddr.get()}\nPassword: {passInput.get()}"):
-            dataFile = open('./data.txt', 'a')
-            dataFile.write(spacer.join([webUrl.get(), emailAddr.get(), passInput.get()]) + "\n")
+            dataFile = open('./data.json', 'w')
+            json.update(create_data, dataFile)
+            # dataFile.write(spacer.join([webUrl.get(), emailAddr.get(), passInput.get()]) + "\n")
             dataFile.close()
             webUrl.delete(0, tk.END)
             pyperclip.copy(passInput.get())
