@@ -49,7 +49,7 @@ class QuizInterface:
             self.falseBtn.config(text="Exit", command=self.window.destroy)
 
     def showHelp(self):
-        messagebox.showinfo("How to Play", "This is a random quiz game where you will be asked 10 correct or wrong questions.\n\nAnswer by clicking on the respective button and move to next question.\n\nFinally you will be shown your final score and you have the option to restart and exit the application. We will be implementing a 60s timing function soon.\n\n Enjoy :)")
+        messagebox.showinfo("How to Play", "This is a random quiz game where you will be asked 10 correct or wrong questions.\n\nAnswer by clicking on the respective button and move to next question.\n\nFinally you will be shown your final score and you have the option to restart and exit the application.\n\n Enjoy :)")
 
     def restart(self):
         self.window.title("Restarting...")
